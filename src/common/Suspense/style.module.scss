@@ -1,0 +1,23 @@
+.suspense {
+  width: fit-content;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  margin-top: 15vh;
+}
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 20px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #1890ff;
+  box-shadow: 0 0 0 0 #bae7ff;
+  animation: l1 1s infinite;
+}
+@keyframes l1 {
+  100% {
+    box-shadow: 0 0 0 30px #e6f7ff;
+  }
+}

@@ -1,0 +1,46 @@
+@import "@/common/styles/common.scss";
+
+.header {
+  padding: 0 !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btnCollapse {
+  font-size: 16px;
+  width: 64px !important;
+  height: 64px !important;
+}
+
+.logo {
+  margin: 0 0 0 24px !important;
+}
+
+.btnSetting {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 24px;
+}
+
+.iconSetting {
+  font-size: 18px !important;
+}
+
+.horizontal {
+  .logo {
+    margin: 0 0 0 64px !important;
+
+    @include Responsive(SM) {
+      margin: 0 0 0 24px !important;
+    }
+  }
+  .btnSetting {
+    margin-right: 64px;
+
+    @include Responsive(SM) {
+      margin: 0 0 0 24px !important;
+    }
+  }
+}

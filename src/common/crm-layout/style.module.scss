@@ -1,0 +1,27 @@
+@import "@/common/styles/common.scss";
+
+.crmLayout {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+
+  .layoutRight {
+    height: 100vh;
+    overflow: hidden;
+
+    .content {
+      padding: 12px 24px;
+      height: calc(100% - 64px);
+      overflow: auto;
+      position: relative;
+
+      &.horizontal {
+        padding: 12px 64px;
+
+        @include Responsive(SM) {
+          padding: 12px 24px;
+        }
+      }
+    }
+  }
+}

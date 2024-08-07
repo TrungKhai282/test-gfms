@@ -1,0 +1,50 @@
+// Font-size
+$font_size_medium: 14px;
+
+// Color
+$color_background_main: white;
+$color_text_main: black;
+$color_light_grey: lightgrey;
+$color_grey: grey;
+
+// Screen size
+$XXL: 1920px;
+$XL: 1440px;
+$LG: 1280px;
+$MD: 1024px;
+$SM: 768px;
+$XS: 414px;
+$XXS: 320px;
+
+// media queries responsive
+@mixin Responsive($canvas) {
+  @if $canvas == XXS {
+    @media only screen and (max-width: $XXS) {
+      @content;
+    }
+  } @else if $canvas == XS {
+    @media only screen and (max-width: $XS) {
+      @content;
+    }
+  } @else if $canvas == SM {
+    @media only screen and (max-width: $SM) {
+      @content;
+    }
+  } @else if $canvas == MD {
+    @media only screen and (max-width: $MD) {
+      @content;
+    }
+  } @else if $canvas == LG {
+    @media only screen and (max-width: $LG) {
+      @content;
+    }
+  } @else if $canvas == XL {
+    @media only screen and (max-width: $XL) {
+      @content;
+    }
+  } @else if $canvas == XXL {
+    @media only screen and (max-width: $XXL) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,69 @@
+@import "@/common/styles/common.scss";
+
+.loginScreen {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  background-color: #001529;
+  display: flex;
+  justify-content: flex-end;
+
+  @include Responsive(MD) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include Responsive(MD) {
+      display: none;
+    }
+
+    .textLogo {
+      color: white;
+      font-size: 84px;
+      font-weight: bold;
+    }
+  }
+
+  .right {
+    width: calc(50% - 96px);
+    max-width: 460px;
+    background-color: rgb(255, 255, 255);
+    padding: 48px;
+    display: flex;
+    align-items: center;
+
+    @include Responsive(MD) {
+      border-radius: 8px;
+      width: calc(90% - 96px);
+    }
+
+    .loginForm {
+      width: 100%;
+      @include Responsive(MD) {
+        margin-top: 0;
+      }
+
+      .textLogo {
+        display: none;
+
+        @include Responsive(MD) {
+          display: unset;
+        }
+      }
+    }
+
+    .mainForm {
+      padding: 24px 0;
+
+      .btnSubmit {
+        background: #001529;
+      }
+    }
+  }
+}
